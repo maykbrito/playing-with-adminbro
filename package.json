@@ -1,0 +1,17 @@
+{
+  "name": "basic-admin-bro",
+  "version": "1.0.0",
+  "description": "Learning AdminBro",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Mayk Brito",
+  "license": "MIT"
+}
