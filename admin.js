@@ -56,7 +56,26 @@ AdminBro.registerAdapter(AdminBroMongoose)
 // config
 const rootPath = '/admin'
 const adminBroOptions = new AdminBro({
-	resources: [User, Article],
+	resources: [
+    User,
+    { resource: Article, options: {
+      properties: {
+        body: { type: 'richtext' },
+        created_at: {
+          isVisible: { edit: false, list: true, show: true, filter: true }
+        }
+      }
+   }},],
+   branding: {
+    companyName: 'MegaHack',
+  },
+  locale: {
+    translations: {
+      labels: {
+        Article: 'Amazing Article'
+      }
+    }
+  },
   rootPath
 })
 const adminBroRouter = AdminBroExpress.buildRouter(adminBroOptions)
