@@ -1,10 +1,13 @@
 {
-  "name": "basic-admin-bro",
+  "name": "apagar-projeto",
   "version": "1.0.0",
-  "description": "Learning AdminBro",
-  "main": "server.js",
+  "description": "",
+  "main": "admin.js",
   "dependencies": {
+    "admin-bro": "^3.3.1",
+    "admin-bro-mongoose": "^0.5.2",
     "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
     "mongoose": "^5.10.11"
   },
   "devDependencies": {},
