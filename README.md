@@ -9,3 +9,5 @@ AdminBro to create our ADMIN
 ```sh
 npm i
 ```
+
+copy `.env-example` to `.env` and add needed information
