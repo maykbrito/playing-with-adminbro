@@ -16,7 +16,7 @@ server
 
 
 
-const init = async() => {
+const run = async() => {
     const { MONGO_URL, PORT } = process.env
 
     await mongoose.connect(MONGO_URL, {
@@ -27,4 +27,4 @@ const init = async() => {
     server.listen(PORT, () => console.log("Server started"))
 }
 
-init();
+run();

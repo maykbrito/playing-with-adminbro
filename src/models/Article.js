@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const Article = {
+const Article = new Schema({
   title: String,
   body: String,
   author: {
@@ -12,6 +12,6 @@ const Article = {
     type: Date,
     default: Date.now,
   },
-};
+});
 
 module.exports = model("Article", Article);
