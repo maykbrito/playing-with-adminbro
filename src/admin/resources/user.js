@@ -1,7 +1,7 @@
 const passwordFeature = require('@admin-bro/passwords')
 const argon2 = require('argon2')
 const { isAccessGranted } = require('../auth')
-const User = require("../../models/User")
+const User = require("../../app/models/User")
 
 const resourceName = 'User'
 

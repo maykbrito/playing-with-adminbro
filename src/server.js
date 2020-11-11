@@ -1,19 +1,19 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
+const cors = require('cors')
 const express = require("express")
 const server = express()
 
 const admin = require('./admin/router')
-const User = require('./pages/User')
-const Home = require('./pages/Home')
+const User = require('./app/controllers/UserController')
 
 server
   .use(express.json())
+  .use(cors())
   // routes
   .use('/admin', admin)
-  .get("/", Home.index)
   .get("/api/users", User.index)
-
+  .get("/api/users/:id", User.getOne)
 
 
 const run = async() => {

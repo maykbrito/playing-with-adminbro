@@ -1,4 +1,4 @@
-const Article = require("../../models/Article");
+const Article = require("../../app/models/Article");
 const { isAccessGranted } = require("../auth");
 
 const resourceName = "Article"

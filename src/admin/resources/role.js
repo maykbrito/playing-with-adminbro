@@ -1,6 +1,6 @@
 const { isAccessGranted } = require("../auth");
 
-const Role = require("../../models/Role");
+const Role = require("../../app/models/Role");
 
 const resourceName = "Role";
 

@@ -4,8 +4,8 @@ const mongoose = require("mongoose");
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
-const userModel = require('../models/User')
-const roleModel = require('../models/Role')
+const userModel = require('../app/models/User')
+const roleModel = require('../app/models/Role')
 
 const { authenticationClosure } = require('./auth')
 
