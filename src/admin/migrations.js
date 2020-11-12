@@ -3,8 +3,8 @@ require("dotenv").config();
 const argon2 = require("argon2");
 const mongoose = require("mongoose");
 
-const Role = require("../models/Role");
-const User = require("../models/User");
+const Role = require("../app/imodels/Role");
+const User = require("../app/models/User");
 
 const { MONGO_URL } = process.env;
 
